@@ -12,6 +12,10 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
+# Inisialisasi NLTK (jalankan sekali)
+nltk.download("punkt")
+nltk.download("stopwords")
+
 # Download data training dari GitHub
 url = 'https://raw.githubusercontent.com/ach-Ilhamf/data_csv/main/data_berita%20(1).csv'
 df_train = pd.read_csv(url)
